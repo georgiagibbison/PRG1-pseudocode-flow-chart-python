@@ -32,5 +32,5 @@ else:
 # Output
 print(f"\nCongratulations! You've earned: {achievement}")
 
-if achievement == "Master Player":
+if achievement == "Master Player" or achievement == "Legend":
     print("You've unlocked the secret bonus level!")
