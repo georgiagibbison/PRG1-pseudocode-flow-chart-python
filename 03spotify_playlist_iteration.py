@@ -10,6 +10,8 @@ sad_songs = 0
 energetic_songs = 0
 chill_songs = 0
 romantic_songs = 0
+all_moods = []
+
 
 # Iteration through playlist
 for i in range(playlist_size):
@@ -30,7 +32,14 @@ for i in range(playlist_size):
 
 # Calculate totals and percentages
 total_songs = happy_songs + sad_songs + energetic_songs + chill_songs
+Answer=""
+all_moods.append(happy_songs)
+all_moods.append(sad_songs)
+all_moods.append(chill_songs)
+all_moods.append(energetic_songs)
+all_moods.append(romantic_songs)
 
+mood_types=["happy", "sad", "chill", "energetic", "romantic"]
 # Output results
 print(f"\nYour playlist '{playlist_name}' analysis:")
 print(f"{happy_songs} happy songs ({(happy_songs/total_songs)*100:.1f}%)")
