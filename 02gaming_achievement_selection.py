@@ -1,13 +1,16 @@
 print("=== Gaming Achievement Checker ===")
     
 # Input
+player_score=-1
+time_played_hours=-1
+enemies_defeated=-1
 
-player_score = int(input("Enter your player score: "))
-time_played_hours = int(input("Enter hours played: "))
-enemies_defeated = int(input("Enter enemies defeated: "))
+# player_score = int(input("Enter your player score: "))
+# time_played_hours = int(input("Enter hours played: "))
+# enemies_defeated = int(input("Enter enemies defeated: "))
 
 while player_score<0 or time_played_hours<0 or enemies_defeated<0:
-    print("Invailid input, try again, positive values only")
+    print("positive values only, Can't be less then 0")
     player_score = int(input("Enter your player score: "))
     time_played_hours = int(input("Enter hours played: "))
     enemies_defeated = int(input("Enter enemies defeated: "))
